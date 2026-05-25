@@ -1,0 +1,7 @@
+imu_frame_id: camera_imu
+infra1_frame_id: camera_infra1
+infra2_frame_id: camera_infra2
+color_frame_id: camera_color
+depth_frame_id: camera_depth
+vio_frame_id: insght_vio
+vio_path_frame_id: insght_vio

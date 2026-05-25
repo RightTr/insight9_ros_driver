@@ -1,0 +1,7 @@
+<launch>
+  <rosparam command="load" file="$(find insight_ros_driver)/config/insight9_ros_driver.yaml" />
+  <arg name="rviz" default="true" />
+  <arg name="rvizconfig" default="$(find insight_ros_driver)/rviz_cfg/inght9.rviz" />
+  <node pkg="insight_ros_driver" type="insight9_ros_driver_node" name="insight9_ros_driver" output="screen" />
+  <node if="$(arg rviz)" pkg="rviz" type="rviz" name="insight9_rviz" args="-d $(arg rvizconfig)" output="screen" />
+</launch>
