@@ -432,7 +432,7 @@ int main(int argc, char **argv) {
     Insight9RosDriver driver(node);
     rclcpp::spin(node);
   } catch (const std::exception &e) {
-    RCLCPP_ERROR(rclcpp::get_logger("inght_ros_driver"), "%s", e.what());
+    RCLCPP_ERROR(rclcpp::get_logger("insight_ros_driver"), "%s", e.what());
     rclcpp::shutdown();
     return 1;
   }
